@@ -27,9 +27,10 @@ cp .env.example .env
 
 # User IDs
 Run the following to get your user ID and group ID:
-echo $(id -u) # UID
-echo $(id -g) # GID
-
+```bash
+echo $(id -u) # prints your UID
+echo $(id -g) # prints your GID
+```
 Replace UID and GID with the values:
 USER_UID=UID
 USER_GID=GID
