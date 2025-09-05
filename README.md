@@ -19,7 +19,7 @@ MySQL is monitored with a healthcheck to ensure Gitea only starts when the datab
 git clone https://github.com/yourusername/gitea-docker-compose.git
 cd gitea-docker-compose
 
-2. Create an .env file
+### 2. Create an .env file
 Copy the example and update values as needed:
 cp .env.example .env
 
@@ -42,10 +42,10 @@ GITEA_DB_USER=gitea
 GITEA_DB_PASSWORD=supersecretpassword
 GITEA_DB_NAME=gitea
 
-3. Start the stack
+### 3. Start the stack
 docker-compose up -d
 
-4. Access Gitea
+### 4. Access Gitea
 Web UI: http://localhost:3000
 
 Git via SSH: ssh -p 222 git@localhost
