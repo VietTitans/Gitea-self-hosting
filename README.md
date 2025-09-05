@@ -6,20 +6,33 @@ MySQL is monitored with a healthcheck to ensure Gitea only starts when the datab
 
 ---
 
+## 📋 Prerequisites
+- [Docker](https://docs.docker.com/get-docker/)
+- [Docker Compose](https://docs.docker.com/compose/)
+- Linux/Unix shell (for UID/GID commands)
+
+---
+
 ## 🚀 Getting Started
 
 ### 1. Clone this repository
 git clone https://github.com/yourusername/gitea-docker-compose.git
 cd gitea-docker-compose
+
 2. Create an .env file
 Copy the example and update values as needed:
-
 cp .env.example .env
 
 .env file:
-# User IDs (replace with your actual values from `id -u` and `id -g`)
-USER_UID=1000
-USER_GID=100
+
+# User IDs
+Run the following to get your user ID and group ID:
+echo $(id -u) # UID
+echo $(id -g) # GID
+
+Replace UID and GID with the values:
+USER_UID=UID
+USER_GID=GID
 
 # MySQL root credentials
 MYSQL_ROOT_PASSWORD=supersecretroot
@@ -28,7 +41,6 @@ MYSQL_ROOT_PASSWORD=supersecretroot
 GITEA_DB_USER=gitea
 GITEA_DB_PASSWORD=supersecretpassword
 GITEA_DB_NAME=gitea
-⚠️ Don’t commit .env to git. Add it to .gitignore.
 
 3. Start the stack
 docker-compose up -d
