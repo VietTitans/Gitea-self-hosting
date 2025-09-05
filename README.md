@@ -16,10 +16,8 @@ MySQL is monitored with a healthcheck to ensure Gitea only starts when the datab
 ## 🚀 Getting Started
 
 ### 1. Clone this repository
-```bash
 git clone https://github.com/yourusername/gitea-docker-compose.git
 cd gitea-docker-compose
-```
 
 ### 2. Create an .env file
 Run the following to get your user ID and group ID:
@@ -27,7 +25,7 @@ Run the following to get your user ID and group ID:
 echo $(id -u) # prints your UID
 echo $(id -g) # prints your GID
 ```
-# Replace USER_UID and USER_GID with your own values
+Replace UID and GID with the values:
 USER_UID=1000
 USER_GID=100
 
