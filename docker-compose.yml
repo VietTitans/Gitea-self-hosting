@@ -10,7 +10,7 @@ volumes:
 services:
   server:
     image: gitea/gitea:1.22.3
-    container_name: gitea
+    container_name: gitea-UI
     environment:
       - USER_UID=${USER_UID}
       - USER_GID=${USER_GID}
