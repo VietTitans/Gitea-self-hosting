@@ -26,17 +26,20 @@ echo $(id -u) # prints your UID
 echo $(id -g) # prints your GID
 ```
 Replace UID and GID with the values:
+```bash
 USER_UID=1000
 USER_GID=100
-
+```
 Paste your MySQL root credentials:
+```bash
 MYSQL_ROOT_PASSWORD=supersecretroot
-
+```
 Paste your Gitea database credentials:
+```bash
 GITEA_DB_USER=gitea
 GITEA_DB_PASSWORD=supersecretpassword
 GITEA_DB_NAME=gitea
-
+```
 ### 3. Start the stack
 docker-compose up -d
 
