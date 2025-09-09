@@ -41,7 +41,9 @@ GITEA_DB_PASSWORD=supersecretpassword
 GITEA_DB_NAME=gitea
 ```
 ### 3. Start the stack
+```bash
 docker-compose up -d
+```
 
 ### 4. Access Gitea
 Web UI: http://localhost:3000
