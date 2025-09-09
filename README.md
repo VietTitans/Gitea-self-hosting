@@ -20,7 +20,7 @@ git clone https://github.com/yourusername/gitea-docker-compose.git
 cd gitea-docker-compose
 
 ### 2. Create an .env file
-Run the following to get your user ID and group ID:
+Get your user ID and group ID:
 ```bash
 echo $(id -u) # prints your UID
 echo $(id -g) # prints your GID
@@ -29,10 +29,10 @@ Replace UID and GID with the values:
 USER_UID=1000
 USER_GID=100
 
-# MySQL root credentials
+Paste your MySQL root credentials:
 MYSQL_ROOT_PASSWORD=supersecretroot
 
-# Gitea database credentials
+Paste your Gitea database credentials:
 GITEA_DB_USER=gitea
 GITEA_DB_PASSWORD=supersecretpassword
 GITEA_DB_NAME=gitea
