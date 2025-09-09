@@ -42,7 +42,7 @@ GITEA_DB_NAME=gitea
 ```
 ### 3. Start the stack
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 ### 4. Access Gitea
